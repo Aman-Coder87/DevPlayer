@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif, cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-container {
+    width: 85vw;
+    height: 80vh;
+    border-radius: 1rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#main-container .h2{
+    text-align: center;
+    margin: 1rem 0 0 0 ;
+    font-family: Sans-Serif;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    font-family: 'Pacifico', cursive;
+}
+
+#main-container .p {
+    color: #ccc;
+    font-weight: 930;
+    font-size: 0.8rem;
+    margin: 0.8rem 0 0 1rem;
+}
+
+#main-container .fa-heart {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 1.5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0,4);
+     animation: hbeat 1s linear infinite;
+}
+
+@keyframes hbeat {
+  0% {
+    transform: rotate(10deg) scale(1);
+  }
+  20% {
+    transform: rotate(-10deg) scale(1);
+  }
+  40% {
+    transform: rotate(10deg) scale(1.4);
+  }
+  60% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(10deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(10deg) scale(1);
+  }
+}
+
+#main-container .title {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main-container .title h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.main-container .circle {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container .circle img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icons .fa {
+    font-size: 1.8rem;
+}
+
+.icons .fa-play {
+   /* padding: 0.4rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+    */
+    font-size: 2rem;
+}
+
+@media (orientation: landscape) {
+    
+    .main-container .circle {
+        top: 55%;
+        left: 20%;
+    }
+    
+    #main-container .title {
+        left: 70%;
+    }
+    
+    .icons {
+        left: 70%;
+        width: 50vw;
+        float: right;
+    }
+    
+}
+
+@media screen and (min-width : 768px) {
+    
+    .main-container .circle {
+        width: 20rem;
+        height: 20rem;
+        left: 20%;
+    }
+    
+    .main-container .circle img {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    #main-container .fa-heart {
+        font-size: 2rem;
+    }
+    
+}
