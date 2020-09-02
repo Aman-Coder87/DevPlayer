@@ -74,7 +74,7 @@ body {
 
 #main-container .title {
     position: absolute;
-    top: 65%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
